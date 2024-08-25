@@ -26,6 +26,10 @@ extension CDNasa {
     @NSManaged public var image: Data?
     @NSManaged public var id: UUID?
 
+    func convertToNasaData() -> NasaData {
+        return NasaData(date: self.date, explanation: self.explanation, hdurl: self.hdurl, media_type: self.media_type, service_version: self.service_version, title: self.title, url: self.url, id: self.id!, image: self.image)
+    }
+
 }
 
 extension CDNasa : Identifiable {

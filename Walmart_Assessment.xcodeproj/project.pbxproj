@@ -16,6 +16,15 @@
 		8991B7732C7B867F004D2B5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8991B7712C7B867F004D2B5D /* LaunchScreen.storyboard */; };
 		8991B7832C7B8807004D2B5D /* CDNasa+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7812C7B8807004D2B5D /* CDNasa+CoreDataClass.swift */; };
 		8991B7842C7B8807004D2B5D /* CDNasa+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7822C7B8807004D2B5D /* CDNasa+CoreDataProperties.swift */; };
+		8991B7862C7B8889004D2B5D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7852C7B8889004D2B5D /* Reachability.swift */; };
+		8991B7882C7B88EF004D2B5D /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7872C7B88EF004D2B5D /* PersistentStorage.swift */; };
+		8991B78A2C7B89C1004D2B5D /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7892C7B89C1004D2B5D /* CoreDataRepository.swift */; };
+		8991B78C2C7B8A04004D2B5D /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B78B2C7B8A04004D2B5D /* CoreDataModel.swift */; };
+		8991B78F2C7B8BBB004D2B5D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B78E2C7B8BBB004D2B5D /* CoreDataManager.swift */; };
+		8991B7912C7B8BEF004D2B5D /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7902C7B8BEF004D2B5D /* ResponseModel.swift */; };
+		8991B7932C7B8C24004D2B5D /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7922C7B8C24004D2B5D /* UserRepository.swift */; };
+		8991B7952C7B8C72004D2B5D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7942C7B8C72004D2B5D /* NetworkManager.swift */; };
+		8991B7972C7B8CAA004D2B5D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7962C7B8CAA004D2B5D /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +39,15 @@
 		8991B7742C7B867F004D2B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8991B7812C7B8807004D2B5D /* CDNasa+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDNasa+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		8991B7822C7B8807004D2B5D /* CDNasa+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDNasa+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		8991B7852C7B8889004D2B5D /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		8991B7872C7B88EF004D2B5D /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		8991B7892C7B89C1004D2B5D /* CoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
+		8991B78B2C7B8A04004D2B5D /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
+		8991B78E2C7B8BBB004D2B5D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8991B7902C7B8BEF004D2B5D /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		8991B7922C7B8C24004D2B5D /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		8991B7942C7B8C72004D2B5D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8991B7962C7B8CAA004D2B5D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +80,13 @@
 		8991B7622C7B8674004D2B5D /* Walmart_Assessment */ = {
 			isa = PBXGroup;
 			children = (
+				8991B77A2C7B86AB004D2B5D /* Model */,
+				8991B77B2C7B86B4004D2B5D /* View */,
+				8991B77C2C7B86BC004D2B5D /* ViewModel */,
 				8991B77F2C7B8707004D2B5D /* CoreDataSupportFiles */,
 				8991B77E2C7B86EE004D2B5D /* Repository */,
+				8991B78D2C7B8BA5004D2B5D /* Manager */,
 				8991B77D2C7B86E0004D2B5D /* NetworkManager */,
-				8991B77C2C7B86BC004D2B5D /* ViewModel */,
-				8991B77B2C7B86B4004D2B5D /* View */,
-				8991B77A2C7B86AB004D2B5D /* Model */,
 				8991B7632C7B8674004D2B5D /* AppDelegate.swift */,
 				8991B7652C7B8674004D2B5D /* SceneDelegate.swift */,
 				8991B7692C7B8674004D2B5D /* Main.storyboard */,
@@ -82,6 +101,8 @@
 		8991B77A2C7B86AB004D2B5D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8991B78B2C7B8A04004D2B5D /* CoreDataModel.swift */,
+				8991B7902C7B8BEF004D2B5D /* ResponseModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -89,6 +110,7 @@
 		8991B77B2C7B86B4004D2B5D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8991B7672C7B8674004D2B5D /* ViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -96,7 +118,7 @@
 		8991B77C2C7B86BC004D2B5D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				8991B7672C7B8674004D2B5D /* ViewController.swift */,
+				8991B7962C7B8CAA004D2B5D /* ViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -105,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				8991B7802C7B872A004D2B5D /* SupportFiles */,
+				8991B7942C7B8C72004D2B5D /* NetworkManager.swift */,
 			);
 			name = NetworkManager;
 			sourceTree = "<group>";
@@ -112,6 +135,8 @@
 		8991B77E2C7B86EE004D2B5D /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				8991B7892C7B89C1004D2B5D /* CoreDataRepository.swift */,
+				8991B7922C7B8C24004D2B5D /* UserRepository.swift */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -121,6 +146,7 @@
 			children = (
 				8991B7812C7B8807004D2B5D /* CDNasa+CoreDataClass.swift */,
 				8991B7822C7B8807004D2B5D /* CDNasa+CoreDataProperties.swift */,
+				8991B7872C7B88EF004D2B5D /* PersistentStorage.swift */,
 			);
 			name = CoreDataSupportFiles;
 			sourceTree = "<group>";
@@ -128,8 +154,17 @@
 		8991B7802C7B872A004D2B5D /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				8991B7852C7B8889004D2B5D /* Reachability.swift */,
 			);
 			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		8991B78D2C7B8BA5004D2B5D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8991B78E2C7B8BBB004D2B5D /* CoreDataManager.swift */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,12 +238,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8991B7932C7B8C24004D2B5D /* UserRepository.swift in Sources */,
+				8991B7882C7B88EF004D2B5D /* PersistentStorage.swift in Sources */,
+				8991B78A2C7B89C1004D2B5D /* CoreDataRepository.swift in Sources */,
+				8991B7862C7B8889004D2B5D /* Reachability.swift in Sources */,
 				8991B7832C7B8807004D2B5D /* CDNasa+CoreDataClass.swift in Sources */,
 				8991B7842C7B8807004D2B5D /* CDNasa+CoreDataProperties.swift in Sources */,
 				8991B76E2C7B8674004D2B5D /* Walmart_Assessment.xcdatamodeld in Sources */,
 				8991B7682C7B8674004D2B5D /* ViewController.swift in Sources */,
 				8991B7642C7B8674004D2B5D /* AppDelegate.swift in Sources */,
+				8991B78C2C7B8A04004D2B5D /* CoreDataModel.swift in Sources */,
+				8991B7972C7B8CAA004D2B5D /* ViewModel.swift in Sources */,
+				8991B7952C7B8C72004D2B5D /* NetworkManager.swift in Sources */,
 				8991B7662C7B8674004D2B5D /* SceneDelegate.swift in Sources */,
+				8991B7912C7B8BEF004D2B5D /* ResponseModel.swift in Sources */,
+				8991B78F2C7B8BBB004D2B5D /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
