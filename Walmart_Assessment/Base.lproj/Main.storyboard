@@ -35,10 +35,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sfk-k6-X0u">
-                                <rect key="frame" x="0.0" y="103" width="393" height="426"/>
+                                <rect key="frame" x="0.0" y="102.99999999999997" width="393" height="511.33333333333326"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ty-81-qji">
-                                <rect key="frame" x="0.0" y="529" width="393" height="289"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ty-81-qji">
+                                <rect key="frame" x="0.0" y="614.33333333333337" width="393" height="203.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -53,7 +53,7 @@
                             <constraint firstItem="Sfk-k6-X0u" firstAttribute="top" secondItem="YV1-47-0FO" secondAttribute="top" id="CmL-7M-mZ2"/>
                             <constraint firstItem="Sfk-k6-X0u" firstAttribute="width" secondItem="h74-SF-fzV" secondAttribute="width" id="Jnw-o8-8Xn"/>
                             <constraint firstItem="YV1-47-0FO" firstAttribute="trailing" secondItem="7Ty-81-qji" secondAttribute="trailing" id="VhK-iJ-7e0"/>
-                            <constraint firstItem="Sfk-k6-X0u" firstAttribute="height" secondItem="h74-SF-fzV" secondAttribute="height" multiplier="0.5" id="VkC-xs-oYW"/>
+                            <constraint firstItem="Sfk-k6-X0u" firstAttribute="height" secondItem="h74-SF-fzV" secondAttribute="height" multiplier="0.6" id="VkC-xs-oYW"/>
                             <constraint firstItem="YV1-47-0FO" firstAttribute="bottom" secondItem="7Ty-81-qji" secondAttribute="bottom" id="lna-iW-NgI"/>
                             <constraint firstItem="7Ty-81-qji" firstAttribute="leading" secondItem="YV1-47-0FO" secondAttribute="leading" id="m4b-Nd-BWM"/>
                         </constraints>

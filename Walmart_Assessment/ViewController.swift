@@ -13,9 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     
     var nasaData : [NasaData]? = nil
-    
     private let manager: NasaDataManager = NasaDataManager()
-    
     var viewModel = ContentViewModel()
    
     
@@ -23,55 +21,49 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if Reachability.isConnectedToNetwork(){
-            print("Internet Connection Available!")
-        }else{
-            print("Internet Connection not Available!")
-        }
+         checkIfDataExists()
+       
+    }
+
+   
+    private func checkIfDataExists(){
         
         let now = Date.now
         let today = now.formatted(.iso8601.year().month().day().dateSeparator(.dash))
      
-        
-        // Do any additional setup after loading the view.
         if (UserDefaults.standard.string(forKey: "FIRSTLAUNCH") == today){
            print("Not a FIRSTLAUNCH \(today)")
+            fetchFromCoreData()
         }else{
-            print("FIRSTLAUNCH \(today)" , "----", "\(UserDefaults.standard.string(forKey: "FIRSTLAUNCH"))")
-            UserDefaults.standard.set(today, forKey: "FIRSTLAUNCH")
+           UserDefaults.standard.set(today, forKey: "FIRSTLAUNCH")
+           if Reachability.isConnectedToNetwork(){
+                fetchJsonData()
+            }else{
+                displayAlert(alertMessage: "Internet Connection not Available!")
+            }
            
         }
-       
         
+    }
+   
+}
 
+extension ViewController {
+    
+    
+    private func fetchFromCoreData(){
         
         nasaData = manager.getAll()
         if(nasaData != nil && nasaData?.count != 0) {
-            print(nasaData?[0].title, "I am title", nasaData?[0].id)
             if let imageData = nasaData?[0].image{
                 self.imageView.image = UIImage(data: imageData)
             }
             self.title = nasaData?[0].title
             textView.text = nasaData?[0].explanation
-            
-            //            let saveData = NasaData(date: "responseArray.date", explanation: "responseArray.explanation," ,hdurl: "responseArray.hdurl", media_type: "responseArray.media_type", service_version: "responseArray.service_version", title: "responseArray.title," ,url: "responseArray.url", id: (nasaData?[0].id)!, image: nasaData?[0].image)
-            //
-            //            if manager.update(data: saveData){
-            //                print(nasaData?[0].title, "I am title", nasaData?[0].id)
-            //            }
         }else {
-            
             fetchJsonData()
         }
     }
-
-   
-    
-   
-    
-}
-
-extension ViewController {
     
     
     private func fetchJsonData(){
@@ -100,17 +92,26 @@ extension ViewController {
             if let data = try? Data(contentsOf: imageUrl) {
                 DispatchQueue.main.async { [self] in
                     // Create Image and Update Image View
-                    print(data, "data123")
+                    
                     self.imageView.image = UIImage(data: data)
                     
                     let saveData = NasaData(date: responseArray.date, explanation: responseArray.explanation, hdurl: responseArray.hdurl, media_type: responseArray.media_type, service_version: responseArray.service_version, title: responseArray.title, url: responseArray.url, id: UUID(), image: data)
-                     manager.saveData(data: saveData)
-//
+                    manager.saveData(data: saveData)
+                    //
                 }
             }
         }
         self.title = responseArray.title
         textView.text = responseArray.explanation
+    }
+    
+    
+    private func displayAlert(alertMessage: String)
+    {
+        let alert = UIAlertController(title: "Alert", message: alertMessage, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(okAction)
+        self.present(alert, animated: true)
     }
 }
 
