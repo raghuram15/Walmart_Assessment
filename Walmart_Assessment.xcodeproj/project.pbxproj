@@ -25,6 +25,7 @@
 		8991B7932C7B8C24004D2B5D /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7922C7B8C24004D2B5D /* UserRepository.swift */; };
 		8991B7952C7B8C72004D2B5D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7942C7B8C72004D2B5D /* NetworkManager.swift */; };
 		8991B7972C7B8CAA004D2B5D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7962C7B8CAA004D2B5D /* ViewModel.swift */; };
+		89A4045A2C7B96CC0073E980 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A404592C7B96CC0073E980 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		8991B7922C7B8C24004D2B5D /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		8991B7942C7B8C72004D2B5D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8991B7962C7B8CAA004D2B5D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		89A404592C7B96CC0073E980 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				8991B7852C7B8889004D2B5D /* Reachability.swift */,
+				89A404592C7B96CC0073E980 /* Constants.swift */,
 			);
 			name = SupportFiles;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				8991B7832C7B8807004D2B5D /* CDNasa+CoreDataClass.swift in Sources */,
 				8991B7842C7B8807004D2B5D /* CDNasa+CoreDataProperties.swift in Sources */,
 				8991B76E2C7B8674004D2B5D /* Walmart_Assessment.xcdatamodeld in Sources */,
+				89A4045A2C7B96CC0073E980 /* Constants.swift in Sources */,
 				8991B7682C7B8674004D2B5D /* ViewController.swift in Sources */,
 				8991B7642C7B8674004D2B5D /* AppDelegate.swift in Sources */,
 				8991B78C2C7B8A04004D2B5D /* CoreDataModel.swift in Sources */,

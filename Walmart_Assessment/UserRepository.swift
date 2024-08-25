@@ -25,6 +25,6 @@ class UserRepository: UserRepositoryDelegate {
     
     func getJsonPlaceHolderUser(completion: @escaping (Result<Response, CustomError>) -> Void) {
         
-        networkManager.getData(urlString: "https://api.nasa.gov/planetary/apod?api_key=HfbMxTfipP7E4lnACzWSsvQsEnqbXsESrZMazBZf", completionHandler: completion)
+        networkManager.getData(urlString: "https://api.nasa.gov/planetary/apod?api_key=\(Constants.apiKey)", completionHandler: completion)
     }
 }
