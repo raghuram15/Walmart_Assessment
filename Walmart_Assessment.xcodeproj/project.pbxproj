@@ -14,6 +14,8 @@
 		8991B76E2C7B8674004D2B5D /* Walmart_Assessment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8991B76C2C7B8674004D2B5D /* Walmart_Assessment.xcdatamodeld */; };
 		8991B7702C7B867F004D2B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8991B76F2C7B867F004D2B5D /* Assets.xcassets */; };
 		8991B7732C7B867F004D2B5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8991B7712C7B867F004D2B5D /* LaunchScreen.storyboard */; };
+		8991B7832C7B8807004D2B5D /* CDNasa+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7812C7B8807004D2B5D /* CDNasa+CoreDataClass.swift */; };
+		8991B7842C7B8807004D2B5D /* CDNasa+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991B7822C7B8807004D2B5D /* CDNasa+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		8991B76F2C7B867F004D2B5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8991B7722C7B867F004D2B5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8991B7742C7B867F004D2B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8991B7812C7B8807004D2B5D /* CDNasa+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDNasa+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8991B7822C7B8807004D2B5D /* CDNasa+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDNasa+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,14 @@
 		8991B7622C7B8674004D2B5D /* Walmart_Assessment */ = {
 			isa = PBXGroup;
 			children = (
+				8991B77F2C7B8707004D2B5D /* CoreDataSupportFiles */,
+				8991B77E2C7B86EE004D2B5D /* Repository */,
+				8991B77D2C7B86E0004D2B5D /* NetworkManager */,
+				8991B77C2C7B86BC004D2B5D /* ViewModel */,
+				8991B77B2C7B86B4004D2B5D /* View */,
+				8991B77A2C7B86AB004D2B5D /* Model */,
 				8991B7632C7B8674004D2B5D /* AppDelegate.swift */,
 				8991B7652C7B8674004D2B5D /* SceneDelegate.swift */,
-				8991B7672C7B8674004D2B5D /* ViewController.swift */,
 				8991B7692C7B8674004D2B5D /* Main.storyboard */,
 				8991B76F2C7B867F004D2B5D /* Assets.xcassets */,
 				8991B7712C7B867F004D2B5D /* LaunchScreen.storyboard */,
@@ -68,6 +77,59 @@
 				8991B76C2C7B8674004D2B5D /* Walmart_Assessment.xcdatamodeld */,
 			);
 			path = Walmart_Assessment;
+			sourceTree = "<group>";
+		};
+		8991B77A2C7B86AB004D2B5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8991B77B2C7B86B4004D2B5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8991B77C2C7B86BC004D2B5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8991B7672C7B8674004D2B5D /* ViewController.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		8991B77D2C7B86E0004D2B5D /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				8991B7802C7B872A004D2B5D /* SupportFiles */,
+			);
+			name = NetworkManager;
+			sourceTree = "<group>";
+		};
+		8991B77E2C7B86EE004D2B5D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		8991B77F2C7B8707004D2B5D /* CoreDataSupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8991B7812C7B8807004D2B5D /* CDNasa+CoreDataClass.swift */,
+				8991B7822C7B8807004D2B5D /* CDNasa+CoreDataProperties.swift */,
+			);
+			name = CoreDataSupportFiles;
+			sourceTree = "<group>";
+		};
+		8991B7802C7B872A004D2B5D /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8991B7832C7B8807004D2B5D /* CDNasa+CoreDataClass.swift in Sources */,
+				8991B7842C7B8807004D2B5D /* CDNasa+CoreDataProperties.swift in Sources */,
 				8991B76E2C7B8674004D2B5D /* Walmart_Assessment.xcdatamodeld in Sources */,
 				8991B7682C7B8674004D2B5D /* ViewController.swift in Sources */,
 				8991B7642C7B8674004D2B5D /* AppDelegate.swift in Sources */,
